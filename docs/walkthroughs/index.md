@@ -6,9 +6,9 @@ description: A complete business walkthrough for running a leadership 360 review
 
 # Walkthrough
 
-This walkthrough follows one Senior Management-led review from the first sign-in to the finished leadership report. It uses the example of East West reviewing Maria Santos with three peer raters.
+This walkthrough follows one Senior Management-led review from the first sign-in to the finished leadership report. It uses the East West presentation review, where Senior Management monitors a realistic in-progress cycle with many reviewed employees, active respondent links, completed feedback, individual reports, and governed raw response review.
 
-The screenshots show what the product looks like at each stage. You do not need to know how the system works behind the scenes; follow the screens, decisions, and outcomes.
+The screenshots show what the product looks like at each stage. You do not need to know how the system works behind the scenes; follow the screens, decisions, and outcomes. This walkthrough covers the full Senior Management flow: organization access, employee setup, framework and custom competency selection, AI-assisted questionnaire review, response visibility governance, rater links, respondent acknowledgement, Cycle Operations, individual reports, and governed raw response review.
 
 ## 1. Start in Survey360
 
@@ -46,7 +46,7 @@ You are ready to move on once you can see the empty Survey Cycles workspace and 
 
 ## 2. Add employees
 
-Before creating a review, you need the people who will participate. Add the reviewed leader and the raters who will be invited to give feedback. In this example, Maria Santos is the reviewed leader. Rafael Cruz, Anna Mercado, and Paolo Reyes are peer raters.
+Before creating a review, you need the people who will participate. Add the reviewed leaders and the raters who will be invited to give feedback. In the East West presentation data, the roster includes multiple reviewed employees and raters so Senior Management can see portfolio-level progress instead of a toy one-person cycle.
 
 The employee import preview lets you paste or type names and email addresses, then check the parsed rows before saving. Survey360 gives you this review step before invitations are created, which is where you catch spelling mistakes or incorrect emails.
 
@@ -56,7 +56,7 @@ The Employee Directory confirms that the participant list has been saved. The re
 
 ![Imported employee directory](/img/walkthroughs/sm-only-ssf/09-employee-directory-imported.png)
 
-You are ready to move on when the Employee Directory shows Maria Santos and the three raters with correct email addresses.
+You are ready to move on when the Employee Directory shows the reviewed employees and raters with correct email addresses.
 
 ## 3. Create the leadership review
 
@@ -100,25 +100,29 @@ Approve the questionnaire only when the questions are ready for raters. Once app
 
 The approved cycle screen shows that the review has moved from preparation into execution. At this point, the questionnaire is locked for the active version and the team can begin assigning raters.
 
-You are ready to move on when the review status shows as active and approved.
+Before invitations are created, Senior Management also decides the response visibility policy for this review. There are three choices: do not allow individual response review, allow anonymous individual response review, or allow identified individual response review. Anonymous review lets Senior Management inspect individual answers without rater names. Identified review shows rater names and should be used only when that visibility has been explicitly approved.
+
+This decision must be made before personal survey links are minted. Once links exist, Survey360 locks the policy so the visibility promise cannot change after raters have been invited.
+
+The policy also changes what raters see later. If individual response review is enabled, each rater must acknowledge the response visibility notice before submitting feedback. If the policy stays disabled, the survey remains a standard aggregate-reporting flow.
+
+You are ready to move on when the review status shows as active and approved, and the response visibility policy reflects the intended level of review for this cycle.
 
 ## 5. Invite raters
 
-With the review active, you can now assign raters. Select Maria Santos as the reviewed leader, then choose the raters from the Employee Directory. Survey360 creates a personal survey link for each rater.
+With the review active, you can now assign raters. Select each reviewed leader, then choose raters from the Employee Directory. Survey360 creates a personal survey link for each rater.
 
 The rater assignment view shows who has been invited and whether each personal link is active. Senior Management can track invitations here without exposing anyone's answers.
 
 ![Assigned peer raters](/img/walkthroughs/sm-only-ssf/16-rater-links-assigned.png)
-
-Before raters respond, the completion view shows assigned invitations but no completed responses. This image is the baseline for participation tracking: the review is open, but no feedback has been submitted yet.
-
-![Completion before responses](/img/walkthroughs/sm-only-ssf/17-completion-before-responses.png)
 
 You are ready to move on when all raters have been assigned and their personal links are active. At this point, raters can begin submitting feedback.
 
 ## 6. Raters submit feedback
 
 Each rater receives their personal link by email. When they open it, they see the survey questions and can rate the reviewed leader on each skill. The survey is designed to be completed in one sitting.
+
+If individual response review is enabled, the rater also sees a response visibility disclosure before submitting. The disclosure explains whether Senior Management may review individual answers with or without rater identity, and the rater must acknowledge that policy before submitting feedback.
 
 The respondent form is the rater's view of the questionnaire. It keeps the survey focused: the rater answers the approved questions, including any custom competency questions, without seeing internal setup or report controls.
 
@@ -138,25 +142,39 @@ You are ready to move on when all raters have submitted their feedback. Check th
 
 Return to Cycle Operations to check participation. The completion view shows which raters have finished and which are still pending. This helps you decide whether to follow up with pending raters before generating the report.
 
-When all required responses are complete and the anonymity threshold is met, the report generation option becomes available. The anonymity threshold means enough raters have responded so that no individual answer can be traced back to a specific person. This protects raters and encourages honest feedback.
+Cycle Operations also summarizes readiness: completion progress, the response funnel, lifecycle states, the response visibility policy, and the actions available to Senior Management. It is an operations view, not an answer browser, so it tracks progress without exposing survey content. When governed individual review is enabled, Cycle Operations can also provide the Senior Management-only entry point for reviewing raw responses.
+
+When enough responses are complete and the anonymity threshold is met, report generation becomes available. The anonymity threshold means enough raters have responded so that no individual answer can be traced back to a specific person. This protects raters and encourages honest feedback.
 
 ![Completion after all responses](/img/walkthroughs/sm-only-ssf/21-completion-after-responses.png)
 
-The completed participation view shows that every expected rater has submitted feedback. It is the evidence Senior Management needs before moving from collection to reporting.
+The participation view shows assigned, invited, completed, active-link, and report-readiness counts together. It is the evidence Senior Management needs before moving from collection to reporting.
 
 Generate the leadership report from the review workspace. Survey360 compiles the feedback into a structured summary.
 
-![Report generation action](/img/walkthroughs/sm-only-ssf/22-report-action-ready.png)
-
 The report action screen makes the handoff clear: the survey is complete, the anonymity rule is satisfied, and Senior Management can now create the report.
 
-The final report summarizes Maria Santos' feedback, including skill scores and development suggestions. Review the results to identify strengths and areas for growth. The report is designed for discussion in coaching or development planning conversations.
+The individual reports summarize employee feedback, including skill scores and development suggestions. Review the results to identify strengths and areas for growth. The reports are designed for discussion in coaching or development planning conversations.
 
 ![Generated leadership report](/img/walkthroughs/sm-only-ssf/23-report-generated.png)
 
-The generated report includes both standard framework skills and any custom competency coverage that was included in the review. In this walkthrough, that means Digital Transformation Leadership appears as part of the leadership story, not as a separate side note.
+The generated report includes both standard framework skills and any custom competency coverage that was included in the review. In the East West presentation cycle, the custom competency appears as part of the leadership story, not as a separate side note.
 
-You are ready to close the review when the report has been generated and reviewed by Senior Management.
+When individual response review was enabled before invitations, Senior Management can open `View raw responses` from an individual report. This governed review page is access-logged every time it is opened. It shows the policy version, whether rater identity is hidden or visible, total row counts, rating row counts, open comment counts, a competency comparison radar, an exact-score matrix, rater group summaries, and an audited table of individual entries.
+
+![Governed raw response review](/img/walkthroughs/sm-only-ssf/24-governed-raw-response-review.png)
+
+The top of the governed review page confirms that the page is Senior Management-only. The `LOG_ID` chip is the access log for that specific view. The identity pill tells you whether rater identity is hidden or visible for the cycle policy.
+
+![Governed raw response radar and score matrix](/img/walkthroughs/sm-only-ssf/25-governed-raw-response-radar.png)
+
+The radar and exact-score matrix help Senior Management compare competency scores across rater groups without exporting raw data. Highlighted cells call attention to larger differences between rater perspectives.
+
+![Governed raw response layout](/img/walkthroughs/sm-only-ssf/26-governed-raw-response-layout.png)
+
+Use this page carefully. It is for Senior Management review only, and it is not a raw export. If the policy is anonymous, rater names remain hidden even though the individual answers can be inspected. If the policy is identified, that visibility had to be decided before links were sent and acknowledged by respondents.
+
+You are ready to close the review when the report has been generated and reviewed by Senior Management, and any governed individual response review has been completed with the expected access logging.
 
 ## Closeout checklist
 
@@ -165,9 +183,15 @@ Use this checklist before closing the review:
 - The organization is active and Senior Management can sign in.
 - The employee list includes one reviewed leader and the selected raters.
 - The review has a clear goal and selected leadership skills.
+- Any cycle-level custom competency appears alongside the selected framework skills.
+- The AI proposal was reviewed, edited where needed, and approved into a questionnaire version.
 - The questionnaire has been reviewed and approved.
+- The response visibility policy was decided before personal links were created.
 - Personal survey links have been sent to raters.
+- Raters saw and acknowledged the visibility notice when individual response review was enabled.
+- Cycle Operations shows completion progress, response funnel, lifecycle readiness, response visibility, and available Senior Management controls.
 - Raters have submitted enough feedback for reporting.
-- The final report has been generated and reviewed by Senior Management.
+- The individual report has been generated and reviewed by Senior Management.
+- If individual response review was enabled, `View raw responses` shows access logging, the correct identity visibility, radar, score matrix, summaries, and audit rows.
 
 The walkthrough is complete when Senior Management can see the finished leadership report.

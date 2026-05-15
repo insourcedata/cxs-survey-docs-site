@@ -41,7 +41,7 @@ Respondents are the invited raters. They do not need a Survey360 workspace accou
 2. Add the reviewed leader and the raters who will provide feedback.
 3. Create the leadership review and choose the skills to assess.
 4. Review, refine, and approve the questionnaire.
-5. Send personal survey links to raters.
+5. Decide the response visibility policy before sending personal survey links.
 6. Track completion until enough feedback has been submitted.
 7. Generate the leadership report and review the results.
 
@@ -49,6 +49,7 @@ Respondents are the invited raters. They do not need a Survey360 workspace accou
 
 - Raters use personal links that can only be submitted once.
 - Reports are generated only when enough responses are collected to protect anonymity.
-- Survey coordination focuses on progress and readiness; individual answers are protected until the final governed report is available.
+- Senior Management decides before links are sent whether individual response review is disabled, anonymous, or identified.
+- Survey coordination focuses on progress and readiness; individual answers are protected unless governed individual review is explicitly enabled and access-logged.
 
 Use the [Walkthrough](./walkthroughs) to follow a complete leadership review from start to finish.
