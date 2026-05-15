@@ -8,7 +8,7 @@ import type {
 
 const config: Config = {
   title: "Survey360 Docs",
-  tagline: "TODO: Replace this placeholder when end-user documentation is ready.",
+  tagline: "A governed 360 feedback lifecycle from tenant setup to report release.",
   favicon: "img/favicon.svg",
 
   url: "https://insourcedata.github.io",
@@ -69,7 +69,7 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Placeholder intro",
+              label: "Survey360 overview",
               to: "/",
             },
           ],

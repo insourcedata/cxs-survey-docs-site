@@ -18,3 +18,177 @@
   --ifm-color-primary-lighter: #bcd2ff;
   --ifm-color-primary-lightest: #f0f4ff;
 }
+
+.intro-actors {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin: 1.75rem 0;
+}
+
+.intro-actor {
+  min-height: 9rem;
+  padding: 1.1rem;
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: 0 14px 34px rgba(23, 32, 51, 0.16);
+}
+
+.intro-actor h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.intro-actor p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  opacity: 0.94;
+}
+
+.intro-actor-admin {
+  background: linear-gradient(145deg, #6a4cff, #4930bc);
+}
+
+.intro-actor-sm {
+  background: linear-gradient(145deg, #0f7c86, #07575e);
+}
+
+.intro-actor-hr {
+  background: linear-gradient(145deg, #d66b1f, #9c4611);
+}
+
+.intro-actor-respondent {
+  background: linear-gradient(145deg, #b24472, #7d2c4f);
+}
+
+.intro-swimlane {
+  --intro-line: var(--ifm-color-emphasis-300);
+  --intro-admin: #6a4cff;
+  --intro-sm: #0f7c86;
+  --intro-hr: #d66b1f;
+  --intro-respondent: #b24472;
+  display: grid;
+  grid-template-columns: 8.75rem repeat(8, minmax(8.25rem, 1fr));
+  gap: 0.6rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  padding-bottom: 0.4rem;
+}
+
+.intro-swimlane-head,
+.intro-lane,
+.intro-step {
+  border: 1px solid var(--intro-line);
+  border-radius: 0.9rem;
+  background: var(--ifm-card-background-color);
+}
+
+.intro-swimlane-head {
+  min-height: 4.6rem;
+  padding: 0.85rem;
+  font-weight: 800;
+}
+
+.intro-swimlane-head span,
+.intro-lane span {
+  display: block;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.intro-lane {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 7rem;
+  padding: 0.9rem;
+  font-weight: 850;
+  line-height: 1.2;
+  box-shadow: 8px 0 18px rgba(23, 32, 51, 0.04);
+}
+
+.intro-step {
+  min-height: 7rem;
+  padding: 0.9rem;
+  border-top: 0.3rem solid var(--intro-dot, var(--intro-line));
+  color: var(--ifm-font-color-base);
+  font-size: 0.78rem;
+  position: relative;
+}
+
+.intro-step::before {
+  content: attr(data-step);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.625rem;
+  height: 1.625rem;
+  margin-bottom: 0.6rem;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--intro-dot);
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.intro-step h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.88rem;
+  letter-spacing: -0.02em;
+}
+
+.intro-step p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.75rem;
+  line-height: 1.42;
+}
+
+.intro-empty {
+  border-style: dashed;
+  border-top-style: solid;
+  color: var(--ifm-color-emphasis-600);
+  background: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+}
+
+.intro-empty::before {
+  display: none;
+}
+
+.intro-admin-line {
+  --intro-dot: var(--intro-admin);
+}
+
+.intro-sm-line {
+  --intro-dot: var(--intro-sm);
+}
+
+.intro-hr-line {
+  --intro-dot: var(--intro-hr);
+}
+
+.intro-respondent-line {
+  --intro-dot: var(--intro-respondent);
+}
+
+@media (max-width: 996px) {
+  .intro-actors {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .intro-actors {
+    grid-template-columns: 1fr;
+  }
+}

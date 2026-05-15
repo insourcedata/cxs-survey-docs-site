@@ -28,11 +28,6 @@ const sidebars: SidebarsConfig = {
         "walkthroughs/completion-reporting-rules",
       ],
     },
-    {
-      type: "category",
-      label: "Placeholders",
-      items: ["placeholders/getting-started", "placeholders/faq"],
-    },
   ],
 };
 
