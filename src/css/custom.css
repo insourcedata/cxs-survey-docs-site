@@ -19,6 +19,18 @@
   --ifm-color-primary-lightest: #f0f4ff;
 }
 
+.markdown img {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 0.45rem;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 0.45rem 1.4rem rgba(25, 35, 55, 0.08);
+}
+
+[data-theme="dark"] .markdown img {
+  border-color: var(--ifm-color-emphasis-300);
+  box-shadow: 0 0.45rem 1.4rem rgba(0, 0, 0, 0.22);
+}
+
 .intro-actors {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
