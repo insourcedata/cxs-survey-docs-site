@@ -1,24 +1,28 @@
 ---
 sidebar_position: 9
 title: Verification Checklist
-description: Final checks for the SM-only SSF walkthrough.
+description: Final business checks for the SM-only SSF walkthrough.
 ---
 
 # Verification Checklist
 
 ## Purpose
 
-Confirm the walkthrough proved the intended product behavior without drifting into the full HR workflow.
+Confirm the walkthrough tells the intended executive story.
 
 ## Steps
 
-1. Confirm the run started from zero tenants and ended with one active organization.
-2. Confirm no HR invitation, HR sign-in, or tenant custom framework step occurred.
-3. Confirm Senior Management completed every tenant action.
-4. Confirm respondent links used fragment tokens and reused links failed.
-5. Confirm completion moved from `0%` to `100%`.
-6. Confirm report generation was visible only in the Senior Management session.
+1. The organization is prepared and activated before the survey begins.
+2. Senior Management completes the setup without switching to an HR role.
+3. The employee roster includes one reviewed leader and three peer raters.
+4. The survey uses Critical Core Skills plus Digital Transformation Leadership.
+5. Senior Management reviews and approves the questionnaire before launch.
+6. Raters submit feedback once, and used invitations cannot be reused.
+7. Completion reaches 100%.
+8. The final report is generated for Senior Management.
+
+![Generated leadership report](/img/walkthroughs/sm-only-ssf/23-report-generated.png)
 
 ## Expected result
 
-The walkthrough is complete when the active cycle has three submitted peer responses and a threshold-safe report for Maria Santos.
+The walkthrough is complete when Senior Management can see a finished leadership report for Maria Santos.

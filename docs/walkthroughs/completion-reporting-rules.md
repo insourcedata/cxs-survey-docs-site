@@ -1,22 +1,28 @@
 ---
 sidebar_position: 4
 title: Completion and Reporting Rules
-description: Completion counts, anonymity threshold, and SM report access expectations.
+description: How Survey360 protects report readiness and confidentiality.
 ---
 
 # Completion and Reporting Rules
 
 ## Purpose
 
-Confirm that completion tracking and report access remain safe for the Senior Management-only walkthrough.
+Show how Senior Management tracks participation and only receives reportable results when the response threshold is met.
 
 ## Steps
 
-1. Check completion before responses: assigned `3`, invited `3`, completed `0`, completion `0%`.
-2. Submit all three peer responses.
-3. Check completion again: assigned `3`, invited `3`, completed `3`, completion `100%`.
-4. Generate the report from the cycle workspace as Senior Management.
+1. Review the completion dashboard before any responses are submitted.
+2. Watch the completed count increase as raters respond.
+3. Confirm the cycle reaches full completion.
+4. Generate the report once the response threshold is satisfied.
+
+![Completion before responses](/img/walkthroughs/sm-only-ssf/17-completion-before-responses.png)
+
+![Completion after all responses](/img/walkthroughs/sm-only-ssf/21-completion-after-responses.png)
+
+![Generated report view](/img/walkthroughs/sm-only-ssf/23-report-generated.png)
 
 ## Expected result
 
-Three completed peer responses meet the anonymity threshold of `3`, so Maria Santos' individual report is visible to Senior Management.
+Once three peer responses are complete, Survey360 can show Maria Santos' individual report to Senior Management.

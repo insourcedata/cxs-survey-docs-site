@@ -1,23 +1,26 @@
 ---
 sidebar_position: 4
 title: Import Employees
-description: Load the sample employee roster for the SM-only walkthrough.
+description: Add the employees who will participate in the leadership review.
 ---
 
 # Import Employees
 
 ## Purpose
 
-Add the people needed for one assessed subject and three peer raters.
+Add the assessed leader and the peers who will provide feedback.
 
 ## Steps
 
-1. Open `/tenant/employees` as Senior Management.
-2. Use the embedded employee CSV.
-3. Click `Preview import` and confirm `Previewed 5 rows`.
-4. Click `Commit valid rows`.
-5. Confirm Maria Santos, Rafael Cruz, Anna Mercado, and Paolo Reyes appear in the directory.
+1. Senior Management opens the Employee Directory.
+2. Survey360 previews the employee list before saving it.
+3. Senior Management confirms the valid rows.
+4. The directory now shows Maria Santos and the peer raters Rafael Cruz, Anna Mercado, and Paolo Reyes.
+
+![Employee import preview](/img/walkthroughs/sm-only-ssf/08-employee-import-preview.png)
+
+![Imported employee directory](/img/walkthroughs/sm-only-ssf/09-employee-directory-imported.png)
 
 ## Expected result
 
-Maria Santos is available as the assessed subject, and Rafael, Anna, and Paolo can be assigned as peer raters.
+Maria Santos can be selected as the leader being reviewed, and the three peers can be invited as raters.

@@ -36,6 +36,8 @@ Survey360 is built around trust in that process. HR can coordinate the survey wi
 
 ## Journey Swimlanes
 
+Senior Management can also assume HR Admin capabilities when coordinating a survey, while the same confidentiality boundaries still apply: HR-level access remains counts-and-coordination only, not answer or report visibility.
+
 <section className="intro-swimlane" aria-label="Survey360 journey swimlane summary">
   <div className="intro-swimlane-head"><span>Lane</span>Actor</div>
   <div className="intro-swimlane-head"><span>Stage 1</span>Platform Setup</div>

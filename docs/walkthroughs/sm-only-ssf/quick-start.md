@@ -1,23 +1,27 @@
 ---
 sidebar_position: 2
-title: Quick Start
-description: Local services and URLs needed before running the SM-only SSF walkthrough.
+title: What You Will See
+description: The main screens in the Senior Management-only walkthrough.
 ---
 
-# Quick Start
+# What You Will See
 
 ## Purpose
 
-Prepare the local Survey360 stack before starting the walkthrough.
+Preview the flow before walking through each screen in detail.
 
 ## Steps
 
-1. Run `make dev-ps` to check the stack.
-2. If it is not running, run `make dev-up`.
-3. For a clean demo, run `make dev-nuke`, `make dev-up`, then `make seed-platform-admin`.
-4. Use `http://localhost:3160` for platform, tenant, and respondent pages.
-5. Use MailHog at `http://localhost:8026` for activation and respondent emails.
+1. An administrator prepares the organization workspace.
+2. Senior Management signs in with an email code.
+3. Senior Management creates and approves the survey.
+4. Raters complete feedback from a simple survey page.
+5. Senior Management reviews completion and generates the report.
+
+![Platform sign-in screen](/img/walkthroughs/sm-only-ssf/01-platform-sign-in.png)
+
+![Senior Management email code screen](/img/walkthroughs/sm-only-ssf/06-senior-management-sign-in-code.png)
 
 ## Expected result
 
-The local web app, worker, database, Redis, and MailHog services are available before the tenant is provisioned.
+The journey is organized around business actions, not technical setup.

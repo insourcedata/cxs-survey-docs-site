@@ -1,25 +1,33 @@
 ---
 sidebar_position: 6
 title: Build and Approve Questionnaire
-description: Request AI generation, review wording, accept the proposal, and approve the questionnaire.
+description: Review the AI-assisted questionnaire and approve it for launch.
 ---
 
 # Build and Approve Questionnaire
 
 ## Purpose
 
-Turn the survey context into an approved questionnaire without letting AI write directly to live survey state.
+Show how Survey360 helps draft questions while keeping Senior Management in control of the final wording.
 
 ## Steps
 
-1. Click `Request Generation` from the cycle workspace.
-2. Wait until the proposal is `Ready for review`.
-3. Open `Review` and edit at least one question.
-4. Enter `Make this more behavior-specific while preserving the same competency.` as the prompt adjustment.
-5. Generate and apply one wording alternative.
-6. Click `Accept Proposal`.
-7. Return to the cycle workspace and approve Version 1.
+1. Senior Management requests a draft questionnaire from the cycle workspace.
+2. Survey360 shows when the draft is ready for review.
+3. Senior Management opens the review screen and edits the wording where needed.
+4. The AI wording assistant can suggest a clearer alternative.
+5. Senior Management accepts the proposal only after reviewing it.
+6. The accepted questionnaire appears as Version 1.
+7. Senior Management approves Version 1 and activates the cycle.
+
+![AI proposal ready for review](/img/walkthroughs/sm-only-ssf/12-ai-proposal-ready.png)
+
+![AI wording assistant](/img/walkthroughs/sm-only-ssf/13-ai-proposal-review-alternative.png)
+
+![Draft questionnaire version](/img/walkthroughs/sm-only-ssf/14-questionnaire-draft-version.png)
+
+![Approved active cycle](/img/walkthroughs/sm-only-ssf/15-cycle-approved-active.png)
 
 ## Expected result
 
-Version 1 moves from draft to approved, and the cycle becomes active.
+The questionnaire is approved, and the cycle is ready for rater invitations.

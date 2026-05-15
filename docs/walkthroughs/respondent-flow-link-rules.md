@@ -1,22 +1,28 @@
 ---
 sidebar_position: 3
-title: Respondent Flow and Link Rules
-description: How respondent survey links behave during the SM-only SSF walkthrough.
+title: Respondent Experience
+description: What invited raters see when they complete a Survey360 review.
 ---
 
 # Respondent Flow and Link Rules
 
 ## Purpose
 
-Confirm that raters use secure, single-use links without signing in to the tenant workspace.
+Show the simple experience for invited raters and the safeguards that prevent duplicate submissions.
 
 ## Steps
 
-1. Send one respondent link per subject-rater assignment.
-2. Open each full `/respondent?tenantId=...#token` URL from a fresh page load.
-3. Submit one completed response per link.
-4. Reopen one used link to confirm it cannot be reused.
+1. Each rater receives a personal survey link.
+2. The survey opens directly, without requiring a workspace sign-in.
+3. The rater scores each question and submits the response.
+4. A used link cannot be submitted again.
+
+![Respondent survey form](/img/walkthroughs/sm-only-ssf/18-respondent-rating-form.png)
+
+![Submitted respondent response](/img/walkthroughs/sm-only-ssf/19-respondent-submitted.png)
+
+![Used respondent link message](/img/walkthroughs/sm-only-ssf/20-respondent-link-used.png)
 
 ## Expected result
 
-Each rater can submit once, the raw token stays in the URL fragment, and a reused link shows that it is invalid or already used.
+The respondent experience is low-friction, and each invitation can be used only once.

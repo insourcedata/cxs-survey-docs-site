@@ -1,25 +1,25 @@
 ---
 sidebar_position: 2
 title: Survey Lifecycle Overview
-description: The major lifecycle stages covered by Survey360 walkthroughs.
+description: The major stages in a Survey360 leadership review.
 ---
 
 # Survey Lifecycle Overview
 
 ## Purpose
 
-Show how a Survey360 run moves from tenant setup to report generation.
+Show how a leadership review moves from preparation to report generation.
 
 ## Steps
 
-1. Provision and activate the tenant.
+1. Prepare the organization workspace.
 2. Add the employee roster.
-3. Create a survey cycle and questionnaire.
-4. Approve and activate the survey.
-5. Send respondent links.
-6. Collect responses and monitor completion.
-7. Generate threshold-safe reports.
+3. Create the leadership survey.
+4. Review and approve the questionnaire.
+5. Invite raters to give feedback.
+6. Monitor participation.
+7. Generate the leadership report.
 
 ## Expected result
 
-The walkthrough should prove the full path from an empty tenant to a completed, report-ready survey cycle.
+The executive team can see how Survey360 turns employee feedback into a governed, report-ready leadership review.
