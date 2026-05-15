@@ -1,132 +1,54 @@
 ---
 sidebar_position: 1
 title: Survey360 at a glance
-description: A high-level overview of the Survey360 actors and survey lifecycle.
+description: A high-level overview of Survey360 for Senior Management users.
 slug: /
 ---
 
 # Survey360 at a glance
 
-Survey360 moves from an empty system to a trusted 360 report through Super Admin, Senior Management, HR, and Respondent handoffs. Employees are the roster population; respondents are employees temporarily acting through single-use survey links.
+Survey360 helps Senior Management run a confidential 360-degree leadership review from setup to final report. The experience is designed around clear decisions: who is being reviewed, who gives feedback, which leadership skills matter, and when the report is ready to use.
 
 ## What 360 feedback means here
 
-360 feedback collects structured input about an assessed employee from the people around them: managers, peers, direct reports, and sometimes the employee themselves. Instead of relying on one manager's view, it combines multiple perspectives into a competency-based picture of strengths, gaps, and development priorities.
+A 360 review gathers structured feedback about a leader from people who work with them, such as managers, peers, and direct reports. Instead of relying on one point of view, it combines several perspectives into a clearer picture of strengths, gaps, and development priorities.
 
-Survey360 is built around trust in that process. HR can coordinate the survey without seeing sensitive answers, respondents can give honest feedback through protected single-use links, and Senior Management receives reports only after governance, approval, and anonymity rules have been applied.
+## See it in action
 
-<section className="intro-actors" aria-label="Survey360 actors">
-  <article className="intro-actor intro-actor-admin">
-    <h2>Super Admin</h2>
-    <p>Platform operator. Provisions, suspends, reactivates, and inspects lifecycle metadata. Does not see tenant survey data.</p>
-  </article>
-  <article className="intro-actor intro-actor-sm">
-    <h2>Senior Management</h2>
-    <p>Tenant executive. Activates the organization, invites HR, approves questionnaires, manages governed raw-response policy, generates reports, and views reports.</p>
-  </article>
-  <article className="intro-actor intro-actor-hr">
-    <h2>HR Admin</h2>
-    <p>Survey coordinator. Imports employees, creates cycles, requests AI, reviews proposals and alternatives, creates rater links, and tracks completion without seeing answers.</p>
-  </article>
-  <article className="intro-actor intro-actor-respondent">
-    <h2>Respondent</h2>
-    <p>A temporary access mode for invited raters. Usually these are employees answering through single-use links without tenant accounts.</p>
-  </article>
-</section>
+Watch a short walkthrough of a complete leadership review in Survey360.
 
-## Journey Swimlanes
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/Rm-ng4g2WkQ"
+  title="Survey360 Walkthrough Video"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+/>
 
-Senior Management can also assume HR Admin capabilities when coordinating a survey, while the same confidentiality boundaries still apply: HR-level access remains counts-and-coordination only, not answer or report visibility.
+If the video does not load, you can [watch it on YouTube](https://www.youtube.com/watch?v=Rm-ng4g2WkQ).
 
-<section className="intro-swimlane" aria-label="Survey360 journey swimlane summary">
-  <div className="intro-swimlane-head"><span>Lane</span>Actor</div>
-  <div className="intro-swimlane-head"><span>Stage 1</span>Platform Setup</div>
-  <div className="intro-swimlane-head"><span>Stage 2</span>Tenant Activation</div>
-  <div className="intro-swimlane-head"><span>Stage 3</span>HR Onboarding</div>
-  <div className="intro-swimlane-head"><span>Stage 4</span>Survey Build</div>
-  <div className="intro-swimlane-head"><span>Stage 5</span>Approval</div>
-  <div className="intro-swimlane-head"><span>Stage 6</span>Rater Links</div>
-  <div className="intro-swimlane-head"><span>Stage 7</span>Feedback</div>
-  <div className="intro-swimlane-head"><span>Stage 8</span>Report</div>
+## Who uses this walkthrough
 
-  <div className="intro-lane intro-admin-line"><span>Platform</span>Super Admin</div>
-  <div className="intro-step intro-admin-line" data-step="1">
-    <h4>Start platform</h4>
-    <p>Runs the clean stack and seeds only the platform admin login.</p>
-  </div>
-  <div className="intro-step intro-admin-line" data-step="2">
-    <h4>Provision org</h4>
-    <p>Creates the tenant, subdomain, industry, and first SM activation email.</p>
-  </div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-empty"></div>
+This documentation is written for Senior Management users. It follows one executive journey through the product, without splitting the story into separate internal roles.
 
-  <div className="intro-lane intro-sm-line"><span>Tenant executive</span>Senior Management</div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-sm-line" data-step="3">
-    <h4>Activate tenant</h4>
-    <p>Claims activation link, signs in by OTP, and lands in an empty tenant workspace.</p>
-  </div>
-  <div className="intro-step intro-sm-line" data-step="4">
-    <h4>Invite HR</h4>
-    <p>Sends HR Admin invitation so survey coordination can start.</p>
-  </div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-sm-line" data-step="8">
-    <h4>Approve questionnaire</h4>
-    <p>Reviews draft version and approves it, moving the cycle to active.</p>
-  </div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-sm-line" data-step="12">
-    <h4>Monitor completion</h4>
-    <p>Can view lifecycle counts and SM-only governance controls while HR remains counts-only.</p>
-  </div>
-  <div className="intro-step intro-sm-line" data-step="13">
-    <h4>Report and raw review</h4>
-    <p>Creates threshold-safe reports and, only if policy allows it, reviews access-logged raw rows.</p>
-  </div>
+Respondents are the invited raters. They do not need a Survey360 workspace account; they complete their feedback through a personal survey link.
 
-  <div className="intro-lane intro-hr-line"><span>Coordinator</span>HR Admin</div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-hr-line" data-step="5">
-    <h4>Accept invite</h4>
-    <p>Claims invitation link and signs in with email OTP as HR Admin.</p>
-  </div>
-  <div className="intro-step intro-hr-line" data-step="6">
-    <h4>Import employees</h4>
-    <p>Previews CSV, commits valid rows, and confirms the assessed employee plus raters.</p>
-  </div>
-  <div className="intro-step intro-hr-line" data-step="7">
-    <h4>Create survey</h4>
-    <p>Creates cycle, requests AI generation, reviews alternatives, applies one wording option, edits, saves, and accepts proposal.</p>
-  </div>
-  <div className="intro-step intro-hr-line" data-step="9">
-    <h4>Create rater links</h4>
-    <p>Selects Maria Santos and three peer raters, then sends respondent links.</p>
-  </div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-empty"></div>
+## The journey
 
-  <div className="intro-lane intro-respondent-line"><span>Invited rater</span>Respondent</div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-empty"></div>
-  <div className="intro-step intro-respondent-line" data-step="10">
-    <h4>Receive link</h4>
-    <p>The invited rater becomes a respondent through <code>/respondent?tenantId=...#token</code>.</p>
-  </div>
-  <div className="intro-step intro-respondent-line" data-step="11">
-    <h4>Submit feedback</h4>
-    <p>The respondent acknowledges active raw-visibility policy when shown, answers the 7-point questions, and sees Response submitted.</p>
-  </div>
-  <div className="intro-step intro-empty"></div>
-</section>
+1. Activate your organization and sign in with your email code.
+2. Add the reviewed leader and the raters who will provide feedback.
+3. Create the leadership review and choose the skills to assess.
+4. Review, refine, and approve the questionnaire.
+5. Send personal survey links to raters.
+6. Track completion until enough feedback has been submitted.
+7. Generate the leadership report and review the results.
 
-Use this page as the map, then follow the walkthroughs for the detailed cold-start run.
+## Confidentiality guardrails
+
+- Raters use personal links that can only be submitted once.
+- Reports are generated only when enough responses are collected to protect anonymity.
+- Survey coordination focuses on progress and readiness; individual answers are protected until the final governed report is available.
+
+Use the [Walkthrough](./walkthroughs) to follow a complete leadership review from start to finish.
