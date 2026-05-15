@@ -9,6 +9,12 @@ slug: /
 
 Survey360 moves from an empty system to a trusted 360 report through Super Admin, Senior Management, HR, and Respondent handoffs. Employees are the roster population; respondents are employees temporarily acting through single-use survey links.
 
+## What 360 feedback means here
+
+360 feedback collects structured input about an assessed employee from the people around them: managers, peers, direct reports, and sometimes the employee themselves. Instead of relying on one manager's view, it combines multiple perspectives into a competency-based picture of strengths, gaps, and development priorities.
+
+Survey360 is built around trust in that process. HR can coordinate the survey without seeing sensitive answers, respondents can give honest feedback through protected single-use links, and Senior Management receives reports only after governance, approval, and anonymity rules have been applied.
+
 <section className="intro-actors" aria-label="Survey360 actors">
   <article className="intro-actor intro-actor-admin">
     <h2>Super Admin</h2>
