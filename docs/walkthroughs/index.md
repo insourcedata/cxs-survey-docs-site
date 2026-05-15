@@ -58,7 +58,11 @@ You are ready to move on when the Employee Directory shows Maria Santos and the 
 
 Now you create the review itself in Survey Cycles. Give it a clear name that describes the review, such as the leader's name and the review period. Describe the purpose in plain language so other stakeholders understand why the review is being run.
 
-The most important decision here is choosing the leadership skills to assess. Survey360 offers skill frameworks you can use as a starting point. This example uses Critical Core Skills, which are broad workplace leadership skills such as decision-making and developing people. It also adds Digital Transformation Leadership as an organization-specific focus area.
+The most important decision here is choosing the leadership skills to assess. Survey360 offers skill frameworks you can use as a starting point. This example uses Critical Core Skills, which are broad workplace leadership skills such as decision-making and developing people.
+
+You can also add a custom competency when the review needs to measure something specific to your organization, team, or current business priority. In this walkthrough, East West adds Digital Transformation Leadership because Maria's review should look beyond general leadership behavior and capture how she leads people through technology-driven change. A custom competency should be written as a clear capability, not a one-off task. Good examples are "Digital Transformation Leadership," "Client Recovery Leadership," or "Cross-functional Change Management." Avoid wording that is too narrow, such as "Finish the CRM rollout," because raters need to score a repeatable leadership behavior.
+
+Custom competencies sit alongside the selected framework skills for this review. Survey360 uses them when drafting questions, raters answer those questions in the same survey, and the final report can show how the reviewed leader performed against both the standard framework and the organization-specific focus area.
 
 ![Create leadership review form](/img/walkthroughs/sm-only-ssf/10-create-ssf-survey-form.png)
 
