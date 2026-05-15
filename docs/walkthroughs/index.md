@@ -154,7 +154,7 @@ The final report summarizes Maria Santos' feedback, including skill scores and d
 
 ![Generated leadership report](/img/walkthroughs/sm-only-ssf/23-report-generated.png)
 
-The generated report should show both standard framework skills and any custom competency coverage that was included in the review. In this walkthrough, that means Digital Transformation Leadership appears as part of the leadership story, not as a separate side note.
+The generated report includes both standard framework skills and any custom competency coverage that was included in the review. In this walkthrough, that means Digital Transformation Leadership appears as part of the leadership story, not as a separate side note.
 
 You are ready to close the review when the report has been generated and reviewed by Senior Management.
 
