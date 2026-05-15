@@ -1,17 +1,83 @@
 ---
 sidebar_position: 1
 title: Survey360 at a glance
-description: A high-level overview of Survey360 for Senior Management users.
+description: A business-friendly overview of what Survey360 does, why it matters, and the capabilities it provides.
 slug: /
 ---
 
 # Survey360 at a glance
 
-Survey360 helps Senior Management run a confidential 360-degree leadership review from setup to final report. The experience is designed around clear decisions: who is being reviewed, who gives feedback, which leadership skills matter, and when the report is ready to use.
+Survey360 is a governed 360-degree leadership feedback platform for organizations that want better leadership insight without compromising trust. It helps the business run structured reviews, collect feedback from managers, peers, direct reports, and self-assessments, then turn the results into decision-ready reports for Senior Management and reviewed employees.
 
-## What 360 feedback means here
+In simple terms: Survey360 gives leaders a safer, more consistent way to understand how leadership behavior is experienced across the organization.
 
-A 360 review gathers structured feedback about a leader from people who work with them, such as managers, peers, and direct reports. Instead of relying on one point of view, it combines several perspectives into a clearer picture of strengths, gaps, and development priorities.
+## Why organizations need it
+
+Leadership performance is often assessed through a narrow view: one manager, one annual review, or informal feedback that is hard to compare. That can hide blind spots, make development planning inconsistent, and create risk when sensitive feedback is handled manually.
+
+Survey360 addresses that by giving the organization a repeatable process for gathering multi-perspective feedback, protecting respondent anonymity, and converting the results into practical leadership development insights.
+
+## What the app does
+
+Survey360 manages the full lifecycle of a leadership 360 review:
+
+1. Set up the organization and users.
+2. Add employees and choose who will be reviewed.
+3. Select leadership competencies and review goals.
+4. Draft survey questions with AI assistance, guided by the Singapore Skills Framework and the organization's context.
+5. Route questionnaires for Senior Management review and approval.
+6. Assign raters and send personal survey links by email.
+7. Track completion without exposing answers to HR operators.
+8. Generate aggregated leadership reports and individual employee reports.
+
+## High-level features
+
+### Guided leadership review setup
+
+Create survey cycles around the people, roles, departments, skills, and goals that matter to the organization. The workflow is designed so Senior Management and HR can align on what is being measured before feedback is collected.
+
+### AI-assisted questionnaire drafting
+
+Survey360 can propose competencies, behavioral indicators, rating questions, and open-ended prompts based on the selected leadership focus. AI helps accelerate drafting, but people stay in control: HR can refine the questionnaire and Senior Management approves it before launch.
+
+### Singapore Skills Framework alignment
+
+The platform can use centrally managed Skills Framework data as a practical starting point for leadership competencies. This keeps reviews grounded in recognized skill language while still allowing organization-specific priorities.
+
+### Confidential respondent experience
+
+Raters receive personal survey links and can submit feedback without creating a workspace account. Links are unique, controlled, and tied to the review cycle so the process is easier for participants and safer for the organization.
+
+### Governance and approval controls
+
+Questionnaires are reviewed before launch, important changes are tracked, and the organization can require Senior Management approval before surveys go out. This reduces the chance of poorly worded or misaligned questions reaching employees.
+
+### HR operations without answer visibility
+
+HR can coordinate the process, upload employees, assign raters, send links, and monitor completion. Sensitive answers and individual reports remain protected, supporting the principle that HR can run the process without seeing confidential feedback.
+
+### Anonymity-aware reporting
+
+Reports are generated only when enough feedback exists to protect respondent anonymity. Survey360 aggregates results by rater group and suppresses views that would risk identifying individuals.
+
+### Executive and employee reports
+
+Senior Management receives organization-wide and employee-level leadership insights. Reviewed employees can receive their own individual reports after release, giving them concrete feedback for development planning.
+
+### Multi-organization readiness
+
+Survey360 is built for multiple organizations, each with its own workspace, users, settings, and survey data. This supports a controlled rollout across clients, business units, or separate operating entities.
+
+## Who uses it
+
+- **Senior Management** reviews and approves questionnaires, monitors leadership outcomes, and uses reports for talent and development decisions.
+- **HR Admins** coordinate the review process, manage employees and raters, and track completion without accessing confidential answers.
+- **Reviewed employees** receive individual feedback reports after the review closes and reports are released.
+- **Respondents and raters** provide feedback through simple personal links without needing a platform account.
+
+## What makes Survey360 different
+
+Survey360 is designed around trust. AI proposes; people approve. HR coordinates; sensitive answers stay protected. Senior Management gets useful reports; anonymity rules reduce the risk of exposing individual raters. The result is a review process that is easier to run, easier to govern, and more credible for participants.
 
 ## See it in action
 
@@ -28,28 +94,5 @@ Watch a short walkthrough of a complete leadership review in Survey360.
 />
 
 If the video does not load, you can [watch it on YouTube](https://www.youtube.com/watch?v=Rm-ng4g2WkQ).
-
-## Who uses this walkthrough
-
-This documentation is written for Senior Management users. It follows one executive journey through the product, without splitting the story into separate internal roles.
-
-Respondents are the invited raters. They do not need a Survey360 workspace account; they complete their feedback through a personal survey link.
-
-## The journey
-
-1. Activate your organization and sign in with your email code.
-2. Add the reviewed leader and the raters who will provide feedback.
-3. Create the leadership review and choose the skills to assess.
-4. Review, refine, and approve the questionnaire.
-5. Decide the response visibility policy before sending personal survey links.
-6. Track completion until enough feedback has been submitted.
-7. Generate the leadership report and review the results.
-
-## Confidentiality guardrails
-
-- Raters use personal links that can only be submitted once.
-- Reports are generated only when enough responses are collected to protect anonymity.
-- Senior Management decides before links are sent whether individual response review is disabled, anonymous, or identified.
-- Survey coordination focuses on progress and readiness; individual answers are protected unless governed individual review is explicitly enabled and access-logged.
 
 Use the [Walkthrough](./walkthroughs) to follow a complete leadership review from start to finish.
