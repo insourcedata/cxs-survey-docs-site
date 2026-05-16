@@ -1,197 +1,169 @@
 ---
 sidebar_position: 1
-title: Walkthrough
-description: A complete business walkthrough for running a leadership 360 review in Survey360.
+title: Senior Management SSF Walkthrough
+description: A complete Senior Management-only walkthrough for running a Singapore Skills Framework leadership 360 review in Survey360.
 ---
 
-# Walkthrough
+# Senior Management SSF Walkthrough
 
-This walkthrough follows one Senior Management-led review from the first sign-in to the finished leadership report. It uses the East West presentation review, where Senior Management monitors a realistic in-progress cycle with many reviewed employees, active respondent links, completed feedback, individual reports, and governed raw response review.
+This walkthrough follows a complete cold-start Survey360 lifecycle. A platform administrator provisions East West, activates the workspace, and then Senior Management runs the full tenant process without switching to an HR account. The review uses Singapore Skills Framework Critical Core Skills, adds one cycle-level custom competency, generates and edits AI questionnaire wording, assigns rater links, collects three peer responses, generates the report, and opens governed raw-response review.
 
-The screenshots show what the product looks like at each stage. You do not need to know how the system works behind the scenes; follow the screens, decisions, and outcomes. This walkthrough covers the full Senior Management flow: organization access, employee setup, framework and custom competency selection, AI-assisted questionnaire review, response visibility governance, rater links, respondent acknowledgement, Cycle Operations, individual reports, and governed raw response review.
+The screenshots come from a fresh local run with one organization, one Senior Management user, five imported employees, one assessed leader, three peer raters, and one completed report. They show the product surface a customer would use rather than backend setup details.
 
-## 1. Start in Survey360
+## 1. Start from the platform control plane
 
-Your organization is prepared before the review begins. After activation, you sign in with your work email and the email code sent to your inbox.
-
-The first sign-in screen is used before the organization workspace is activated. It shows the secure start of the process: an authorized administrator signs in and continues to organization setup.
+The platform sign-in screen is the controlled entry point for organization setup. In local development, the seeded platform admin signs in before creating any tenant data.
 
 ![Platform sign-in screen](/img/walkthroughs/sm-only-ssf/01-platform-sign-in.png)
 
-The Organizations dashboard shows the organizations that have been prepared in Survey360. In this walkthrough, it establishes that East West is created before Senior Management begins the review.
+A clean reset starts with no organizations. The Organizations dashboard confirms that the workspace has not been provisioned yet.
 
 ![Organizations dashboard](/img/walkthroughs/sm-only-ssf/02-platform-organizations-dashboard.png)
 
-The organization setup form captures the organization name and the Senior Management email that will receive access. It also makes clear that the first workspace user is invited through a controlled setup step.
+The provisioning form captures the organization name, subdomain, industry, and first Senior Management email. This is the handoff point from platform administration to tenant ownership.
 
 ![Create organization form](/img/walkthroughs/sm-only-ssf/03-platform-provision-form.png)
 
-After the organization is created, Survey360 shows the new organization record. This confirms that the setup details were saved and that the organization is ready for activation.
+After creation, the organization record shows the lifecycle state and confirms that an activation link exists. The activation email is sent to the Senior Management address through MailHog in local development.
 
 ![Created organization record](/img/walkthroughs/sm-only-ssf/04-platform-organization-created.png)
 
-The activation confirmation shows that the organization workspace has been prepared. From this point, the Senior Management user can sign in to that workspace.
+Opening the activation link prepares the tenant workspace and activates the Senior Management user. From here, the tenant signs in with an email code rather than a password.
 
 ![Organization activation confirmation](/img/walkthroughs/sm-only-ssf/05-tenant-activation-success.png)
 
-The Senior Management sign-in screen asks for the email code sent during activation. The code is single-use and expires shortly, so keep the sign-in page open while you retrieve it.
+The tenant sign-in screen sends and verifies the one-time email code. This keeps the tenant workspace separate from the platform password login.
 
 ![Senior Management email code screen](/img/walkthroughs/sm-only-ssf/06-senior-management-sign-in-code.png)
 
-When sign-in is complete, Survey360 opens the Survey Cycles workspace. The empty state is intentional: it tells Senior Management that no reviews exist yet and points them toward creating the first leadership review.
+After sign-in, Senior Management lands on Survey Cycles. The empty portfolio shows that this is a fresh workspace and no review has been created yet.
 
 ![Senior Management workspace overview](/img/walkthroughs/sm-only-ssf/07-survey-cycles-empty.png)
 
-You are ready to move on once you can see the empty Survey Cycles workspace and the navigation sidebar.
+## 2. Import the employee roster
 
-## 2. Add employees
+Before building the review, Senior Management imports the participant roster. The embedded CSV includes Maria Santos as the assessed leader and Rafael Cruz, Anna Mercado, and Paolo Reyes as peer raters. Camille Dizon is also imported so the directory looks like a reusable tenant roster rather than a one-off form.
 
-Before creating a review, you need the people who will participate. Add the reviewed leaders and the raters who will be invited to give feedback. In the East West presentation data, the roster includes multiple reviewed employees and raters so Senior Management can see portfolio-level progress instead of a toy one-person cycle.
-
-The employee import preview lets you paste or type names and email addresses, then check the parsed rows before saving. Survey360 gives you this review step before invitations are created, which is where you catch spelling mistakes or incorrect emails.
+The preview step validates all rows before anything is committed. This is where spelling, email, department, job title, and seniority issues can be caught safely.
 
 ![Employee import preview](/img/walkthroughs/sm-only-ssf/08-employee-import-preview.png)
 
-The Employee Directory confirms that the participant list has been saved. The reviewed leader and raters now appear as reusable people in the workspace, not as one-off entries tied only to this review.
+After commit, the Employee Directory shows the imported employees with their departments and seniority. Raters become respondents only after personal survey links are minted later in the cycle.
 
 ![Imported employee directory](/img/walkthroughs/sm-only-ssf/09-employee-directory-imported.png)
 
-You are ready to move on when the Employee Directory shows the reviewed employees and raters with correct email addresses.
+## 3. Create the SSF leadership review
 
-## 3. Create the leadership review
+Senior Management creates `East West Leadership 360` with the goal `Assess leadership behaviours for branch managers and create practical development feedback.` The review uses Critical Core Skills from the Singapore Skills Framework, with `Decision Making` and `Developing People` selected as the standard competencies.
 
-Now you create the review itself in Survey Cycles. Give it a clear name that describes the review, such as the leader's name and the review period. Describe the purpose in plain language so other stakeholders understand why the review is being run.
-
-The most important decision here is choosing the leadership skills to assess. Survey360 offers skill frameworks you can use as a starting point. This example uses Critical Core Skills, which are broad workplace leadership skills such as decision-making and developing people.
-
-You can also add a custom competency when the review needs to measure something specific to your organization, team, or current business priority. In this walkthrough, East West adds Digital Transformation Leadership because Maria's review should look beyond general leadership behavior and capture how she leads people through technology-driven change. A custom competency should be written as a clear capability, not a one-off task. Good examples are "Digital Transformation Leadership," "Client Recovery Leadership," or "Cross-functional Change Management." Avoid wording that is too narrow, such as "Finish the CRM rollout," because raters need to score a repeatable leadership behavior.
-
-Custom competencies sit alongside the selected framework skills for this review. Survey360 uses them when drafting questions, raters answer those questions in the same survey, and the final report can show how the reviewed leader performed against both the standard framework and the organization-specific focus area.
-
-The create review form brings those choices together: review name, goal, selected framework skills, and the custom competency. This places the custom competency inside the survey design before any AI questions are drafted.
+A cycle-level custom competency, `Digital Transformation Leadership`, is added to reflect East West's own leadership priority: leading teams through digital change while preserving customer trust and operational discipline. Custom competencies sit beside the SSF competencies for this cycle, are included in AI question drafting, appear in the respondent form, and are summarized in the report.
 
 ![Create leadership review form](/img/walkthroughs/sm-only-ssf/10-create-ssf-survey-form.png)
 
-After the review is created, the workspace shows the selected skills and current status. Digital Transformation Leadership has been carried into the review workspace alongside the standard framework skills, and the review is still in draft while the questionnaire is prepared.
+The cycle workspace confirms the draft status, job family, seniority, framework, selected SSF skills, and the custom competency. The cycle is ready for questionnaire generation.
 
 ![Created survey workspace](/img/walkthroughs/sm-only-ssf/11-cycle-workspace-created.png)
 
-You are ready to move on when the review workspace shows the correct skills and a draft status.
+## 4. Generate, edit, and accept the AI proposal
 
-## 4. Review and approve questions
-
-Survey360 can draft questions based on the goal and selected skills. You stay in control of the final wording. This saves time while ensuring the questions fit your organization's language and culture.
-
-The AI proposal screen presents draft questions grouped around the selected competencies. The screen makes clear that the system is proposing material for review, not silently publishing a questionnaire.
+Senior Management requests AI generation from the cycle workspace. The proposal is generated as a human-review artifact; AI does not publish questions directly to the active survey.
 
 ![AI proposal ready for review](/img/walkthroughs/sm-only-ssf/12-ai-proposal-ready.png)
 
-The wording assistant helps refine a question without changing the competency being assessed. Use it when a question is directionally right but needs plainer language, more behavior-specific wording, or a better fit for the organization.
+In the review screen, Senior Management edits a question and asks the wording assistant to make it more behavior-specific while preserving the competency. The alternative is only a suggestion until the reviewer applies it.
 
 ![AI wording assistant](/img/walkthroughs/sm-only-ssf/13-ai-proposal-review-alternative.png)
 
-The draft questionnaire version shows the reviewed set of questions before approval. This is the checkpoint where Senior Management can inspect the full questionnaire as a versioned draft before it becomes active.
+After applying the wording and accepting the proposal, Survey360 creates Version 1 as a draft questionnaire. The draft is still internal; raters cannot answer until it is approved.
 
 ![Draft questionnaire version](/img/walkthroughs/sm-only-ssf/14-questionnaire-draft-version.png)
 
-Approve the questionnaire only when the questions are ready for raters. Once approved, the review becomes active and can receive rater invitations. You cannot edit questions after approval without creating a new version, so take time to review carefully.
+## 5. Approve the questionnaire and set response visibility
+
+Senior Management approves Version 1. Approval moves the questionnaire to `approved` and the cycle to `active`, which unlocks rater assignment and report readiness tracking.
 
 ![Approved active cycle](/img/walkthroughs/sm-only-ssf/15-cycle-approved-active.png)
 
-The approved cycle screen shows that the review has moved from preparation into execution. At this point, the questionnaire is locked for the active version and the team can begin assigning raters.
+Before respondent links are minted, Senior Management decides the response visibility policy. In this run, anonymous individual response review is enabled: Senior Management may inspect individual rows, but rater names stay hidden. Once links are created, the policy locks so respondents receive a consistent visibility promise.
 
-Before invitations are created, Senior Management also decides the response visibility policy for this review. There are three choices: do not allow individual response review, allow anonymous individual response review, or allow identified individual response review. Anonymous review lets Senior Management inspect individual answers without rater names. Identified review shows rater names and should be used only when that visibility has been explicitly approved.
+Cycle Operations shows the active cycle before responses: assigned, invited, and completed counts are all zero; completion is 0%; the raw-response policy is still unlocked until links are minted; and the Senior Management controls are visible.
 
-This decision must be made before personal survey links are minted. Once links exist, Survey360 locks the policy so the visibility promise cannot change after raters have been invited.
+![Completion before responses](/img/walkthroughs/sm-only-ssf/17-completion-before-responses.png)
 
-The policy also changes what raters see later. If individual response review is enabled, each rater must acknowledge the response visibility notice before submitting feedback. If the policy stays disabled, the survey remains a standard aggregate-reporting flow.
+## 6. Assign peer raters and send personal links
 
-You are ready to move on when the review status shows as active and approved, and the response visibility policy reflects the intended level of review for this cycle.
+With the questionnaire active, Senior Management creates three peer assignments for Maria Santos:
 
-## 5. Invite raters
+- Rafael Cruz rates Maria Santos.
+- Anna Mercado rates Maria Santos.
+- Paolo Reyes rates Maria Santos.
 
-With the review active, you can now assign raters. Select each reviewed leader, then choose raters from the Employee Directory. Survey360 creates a personal survey link for each rater.
-
-The rater assignment view shows who has been invited and whether each personal link is active. Senior Management can track invitations here without exposing anyone's answers.
+Each assignment mints a personal respondent link and sends a feedback request email. The links use the `/respondent?tenantId=...#token` shape, so the raw token stays in the URL fragment rather than the query string.
 
 ![Assigned peer raters](/img/walkthroughs/sm-only-ssf/16-rater-links-assigned.png)
 
-You are ready to move on when all raters have been assigned and their personal links are active. At this point, raters can begin submitting feedback.
+## 7. Raters submit feedback
 
-## 6. Raters submit feedback
+Each rater opens a personal link and completes the approved questionnaire. The respondent form includes the SSF questions and the custom `Digital Transformation Leadership` questions in the same survey.
 
-Each rater receives their personal link by email. When they open it, they see the survey questions and can rate the reviewed leader on each skill. The survey is designed to be completed in one sitting.
-
-If individual response review is enabled, the rater also sees a response visibility disclosure before submitting. The disclosure explains whether Senior Management may review individual answers with or without rater identity, and the rater must acknowledge that policy before submitting feedback.
-
-The respondent form is the rater's view of the questionnaire. It keeps the survey focused: the rater answers the approved questions, including any custom competency questions, without seeing internal setup or report controls.
+Because anonymous raw-response review was enabled before links were sent, the respondent also sees a response visibility notice and must acknowledge the policy before submitting.
 
 ![Respondent survey form](/img/walkthroughs/sm-only-ssf/18-respondent-rating-form.png)
 
-The submission confirmation tells the rater their feedback has been received. This closes the respondent's task and sets the expectation that the link cannot be used again.
+After submission, the respondent receives a confirmation. The link cannot be used for another response.
 
 ![Respondent submission confirmation](/img/walkthroughs/sm-only-ssf/19-respondent-submitted.png)
 
-If someone tries to use the link again, they see a message that the survey has already been completed. This reinforces the single-use nature of respondent links and protects the review from duplicate submissions.
+Opening a used link from a fresh page shows the invalid-or-used message. This confirms the single-use respondent token behavior.
 
 ![Used survey invitation message](/img/walkthroughs/sm-only-ssf/20-respondent-link-used.png)
 
-You are ready to move on when all raters have submitted their feedback. Check the completion view in Cycle Operations to confirm.
+## 8. Track completion and generate the report
 
-## 7. Track completion and generate the report
-
-Return to Cycle Operations to check participation. The completion view shows which raters have finished and which are still pending. This helps you decide whether to follow up with pending raters before generating the report.
-
-Cycle Operations also summarizes readiness: completion progress, the response funnel, lifecycle states, the response visibility policy, and the actions available to Senior Management. It is an operations view, not an answer browser, so it tracks progress without exposing survey content. When governed individual review is enabled, Cycle Operations can also provide the Senior Management-only entry point for reviewing raw responses.
-
-When enough responses are complete and the anonymity threshold is met, report generation becomes available. The anonymity threshold means enough raters have responded so that no individual answer can be traced back to a specific person. This protects raters and encourages honest feedback.
+After all three peer raters submit feedback, Cycle Operations shows `Assigned 3`, `Invited 3`, `Completed 3`, and `Completion 100%`. The response visibility policy is locked, and the anonymity threshold of 3 is satisfied for Maria Santos' peer report.
 
 ![Completion after all responses](/img/walkthroughs/sm-only-ssf/21-completion-after-responses.png)
 
-The participation view shows assigned, invited, completed, active-link, and report-readiness counts together. It is the evidence Senior Management needs before moving from collection to reporting.
+The cycle workspace now marks the report path as ready. Senior Management can generate the report from the cycle hero or from the Individual Reports section.
 
-Generate the leadership report from the review workspace. Survey360 compiles the feedback into a structured summary.
+![Report ready action](/img/walkthroughs/sm-only-ssf/22-report-ready-action.png)
 
-The report action screen makes the handoff clear: the survey is complete, the anonymity rule is satisfied, and Senior Management can now create the report.
-
-The individual reports summarize employee feedback, including skill scores and development suggestions. Review the results to identify strengths and areas for growth. The reports are designed for discussion in coaching or development planning conversations.
+The generated report summarizes the completed feedback for Maria Santos. It includes response count, average rating, competency breakdowns for both SSF and custom competencies, skill scores, cluster scores, and AI development suggestions.
 
 ![Generated leadership report](/img/walkthroughs/sm-only-ssf/23-report-generated.png)
 
-The generated report includes both standard framework skills and any custom competency coverage that was included in the review. In the East West presentation cycle, the custom competency appears as part of the leadership story, not as a separate side note.
+## 9. Review governed raw responses
 
-When individual response review was enabled before invitations, Senior Management can open `View raw responses` from an individual report. This governed review page is access-logged every time it is opened. It shows the policy version, whether rater identity is hidden or visible, total row counts, rating row counts, open comment counts, a competency comparison radar, an exact-score matrix, rater group summaries, and an audited table of individual entries.
+Because anonymous individual response review was enabled before links were minted, Senior Management can open governed raw-response review. Every successful view creates an access log, shown as the `LOG_ID` chip on the page. The policy banner confirms that this is Senior Management-only reviewer-level information and that rater identity is hidden.
 
 ![Governed raw response review](/img/walkthroughs/sm-only-ssf/24-governed-raw-response-review.png)
 
-The top of the governed review page confirms that the page is Senior Management-only. The `LOG_ID` chip is the access log for that specific view. The identity pill tells you whether rater identity is hidden or visible for the cycle policy.
+The raw-response page includes a competency radar, exact-score matrix, and rater group summary so Senior Management can inspect the distribution without exporting raw data.
 
 ![Governed raw response radar and score matrix](/img/walkthroughs/sm-only-ssf/25-governed-raw-response-radar.png)
 
-The radar and exact-score matrix help Senior Management compare competency scores across rater groups without exporting raw data. Highlighted cells call attention to larger differences between rater perspectives.
+The audit table shows every individual response row with the rater anonymized, the rater type, competency, question, answer, and completion timestamp. This makes raw review inspectable while preserving the cycle's anonymous identity policy.
 
 ![Governed raw response layout](/img/walkthroughs/sm-only-ssf/26-governed-raw-response-layout.png)
-
-Use this page carefully. It is for Senior Management review only, and it is not a raw export. If the policy is anonymous, rater names remain hidden even though the individual answers can be inspected. If the policy is identified, that visibility had to be decided before links were sent and acknowledged by respondents.
-
-You are ready to close the review when the report has been generated and reviewed by Senior Management, and any governed individual response review has been completed with the expected access logging.
 
 ## Closeout checklist
 
 Use this checklist before closing the review:
 
-- The organization is active and Senior Management can sign in.
-- The employee list includes one reviewed leader and the selected raters.
-- The review has a clear goal and selected leadership skills.
-- Any cycle-level custom competency appears alongside the selected framework skills.
-- The AI proposal was reviewed, edited where needed, and approved into a questionnaire version.
-- The questionnaire has been reviewed and approved.
-- The response visibility policy was decided before personal links were created.
-- Personal survey links have been sent to raters.
-- Raters saw and acknowledged the visibility notice when individual response review was enabled.
-- Cycle Operations shows completion progress, response funnel, lifecycle readiness, response visibility, and available Senior Management controls.
-- Raters have submitted enough feedback for reporting.
-- The individual report has been generated and reviewed by Senior Management.
-- If individual response review was enabled, `View raw responses` shows access logging, the correct identity visibility, radar, score matrix, summaries, and audit rows.
+- The organization was provisioned and activated from a clean platform state.
+- Senior Management signed in through the tenant email-code flow.
+- No HR invitation, HR sign-in, or tenant custom framework switch was used.
+- The employee roster includes Maria Santos plus the selected peer raters.
+- The cycle uses Critical Core Skills (SSF) and includes a cycle-level custom competency.
+- AI generation was requested by a human, reviewed, edited, assisted with an alternative wording, and accepted.
+- Version 1 was approved before links were sent.
+- Anonymous raw-response review was decided before respondent links were minted and then locked.
+- Three personal peer links were sent, with raw tokens kept in URL fragments.
+- Each respondent completed the survey and acknowledged the visibility notice.
+- Reusing a respondent link failed.
+- Cycle Operations moved from 0% to 100% completion.
+- The report was generated only after three completed peer responses satisfied the anonymity threshold.
+- The final report includes standard SSF skills, the custom competency, scores, and AI development suggestions.
+- Governed raw-response review is Senior Management-only, access-logged, and anonymized under the selected policy.
 
-The walkthrough is complete when Senior Management can see the finished leadership report.
+The walkthrough is complete when Senior Management can see the generated report and, when enabled, the governed raw-response review page with the expected access log and identity policy.
