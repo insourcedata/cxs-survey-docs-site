@@ -8,7 +8,7 @@ description: A Senior Management guide for running a Singapore Skills Framework 
 
 This guide shows the main steps Senior Management uses to run and review a 360-degree leadership survey in Survey360. It focuses on what you need to do in the app: sign in, prepare the roster, create the review, approve the questionnaire, send rater links, track progress, generate reports, and review governed raw responses when the policy allows it.
 
-The example uses an East West Bank leadership cycle with realistic activity: 55 assigned reviews, 44 invited raters, 33 completed submissions, 11 active links, 11 individual reports, and governed raw-response review for Maria Santos.
+The example uses an East West Bank leadership cycle with seeded demo evidence: 55 assigned reviews, 55 invited raters, 55 completed submissions, 0 active links, 11 individual reports, and governed raw-response review for Maria Santos.
 
 ## 1. Activate and sign in
 
@@ -62,7 +62,7 @@ Approve the questionnaire when the questions are ready for raters. Approval acti
 
 ![Approved active cycle](/img/walkthroughs/sm-only-ssf/15-cycle-approved-active.png)
 
-Before sending rater links, choose whether Senior Management can review individual response rows later. In this example, individual review is allowed, but rater names remain hidden.
+Before sending rater links, choose whether Senior Management can review individual response rows later. The setting is approved before raters receive links so the visibility promise stays clear.
 
 ![Completion before responses](/img/walkthroughs/sm-only-ssf/17-completion-before-responses.png)
 
@@ -86,11 +86,11 @@ After submission, the rater sees a confirmation. The same link cannot be used fo
 
 ## 8. Track completion and generate the report
 
-Use Cycle Operations to track the review program. The dashboard shows assigned reviews, invitations, active links, submitted responses, completion percentage, and report readiness in one place.
+Use Cycle Operations to track the review program. The seeded demo shows a fully completed cycle: 55 assigned reviews, 55 invited raters, 55 submitted responses, 0 active links remaining, 100% completion, and 1 report snapshot in one place.
 
 ![Completion after all responses](/img/walkthroughs/sm-only-ssf/21-completion-after-responses.png)
 
-The report-priority card shows whether reports are ready. In this example, the cycle has 33 completed responses, 11 individual reports, and an average rating of 5.01.
+The report-priority card shows whether reports are ready. In this seeded example, the cycle has 55 completed responses, 11 individual reports, and an average rating of 4.74.
 
 ![Report ready action](/img/walkthroughs/sm-only-ssf/22-report-ready-action.png)
 
@@ -100,15 +100,15 @@ Open the generated report to review scores, competency breakdowns, and developme
 
 ## 9. Review governed raw responses
 
-If individual response review was enabled before links were sent, Senior Management can open governed raw-response review. The page shows the access log, confirms that rater identity is hidden, and summarizes the ratings by rater group.
+If individual response review was enabled before links were sent, Senior Management can open governed raw-response review. The seeded Maria Santos example shows the access log, confirms that rater identity is visible under the approved policy, and summarizes 115 rating rows by rater group.
 
 ![Governed raw response review](/img/walkthroughs/sm-only-ssf/24-governed-raw-response-review.png)
 
-Use the radar, score matrix, and group summaries to compare self, manager, and peer feedback without exporting raw data.
+Use the radar, score matrix, and group summaries to compare self, manager, peer, and direct-report feedback without exporting raw data.
 
 ![Governed raw response radar and score matrix](/img/walkthroughs/sm-only-ssf/25-governed-raw-response-radar.png)
 
-The audit table lets Senior Management inspect individual response rows while keeping rater identity hidden under the selected policy.
+The audit table lets Senior Management inspect individual response rows with rater identity visible because that policy was approved before links were sent.
 
 ![Governed raw response layout](/img/walkthroughs/sm-only-ssf/26-governed-raw-response-layout.png)
 
@@ -120,6 +120,6 @@ By the end of the walkthrough, Senior Management can confirm that:
 - The leadership review uses the selected SSF competencies and custom competency.
 - AI-generated questions were reviewed before approval.
 - Rater links were sent only after the questionnaire and response policy were ready.
-- Cycle Operations shows completion progress and report readiness.
+- Cycle Operations shows completion progress, report readiness, and the remaining active-link count.
 - Reports show response counts, scores, competency summaries, and development suggestions.
-- Governed raw-response review is available only when enabled, access-logged, and anonymized according to policy.
+- Governed raw-response review is available only when enabled, access-logged, and displayed according to the approved visibility policy.

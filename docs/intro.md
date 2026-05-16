@@ -86,13 +86,13 @@ Watch a short walkthrough of a complete leadership review in Survey360.
 <iframe
   width="100%"
   height="400"
-  src="https://www.youtube.com/embed/Rm-ng4g2WkQ"
+  src="https://www.youtube.com/embed/5C08baKWsU0"
   title="Survey360 Walkthrough Video"
   frameBorder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowFullScreen
 />
 
-If the video does not load, you can [watch it on YouTube](https://www.youtube.com/watch?v=Rm-ng4g2WkQ).
+If the video does not load, you can [watch it on YouTube](https://www.youtube.com/watch?v=5C08baKWsU0).
 
 Use the [Walkthrough](./walkthroughs) to follow a complete leadership review from start to finish.
