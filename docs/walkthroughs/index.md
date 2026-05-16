@@ -8,7 +8,22 @@ description: A complete Senior Management-only walkthrough for running a Singapo
 
 This walkthrough follows a complete cold-start Survey360 lifecycle. A platform administrator provisions East West, activates the workspace, and then Senior Management runs the full tenant process without switching to an HR account. The review uses Singapore Skills Framework Critical Core Skills, adds one cycle-level custom competency, generates and edits AI questionnaire wording, assigns rater links, collects three peer responses, generates the report, and opens governed raw-response review.
 
-The screenshots come from a fresh local run with one organization, one Senior Management user, five imported employees, one assessed leader, three peer raters, and one completed report. They show the product surface a customer would use rather than backend setup details.
+The screenshots were refreshed from a local cold-start run on 16 May 2026. The run starts with zero organizations, provisions one East West tenant, signs in one Senior Management user, imports five employees, creates one assessed leader and three peer raters, completes three respondent links from fresh page loads, generates one threshold-safe report, and opens governed raw-response review.
+
+## Verified run coverage
+
+| Area | What the run proves | Evidence |
+| --- | --- | --- |
+| Platform control plane | Password-protected platform admin can create a tenant and inspect lifecycle metadata without tenant roster or response data. | Screenshots 1-4 |
+| Tenant activation and SM sign-in | Activation uses a single-use email link, then the tenant workspace uses a one-time email code. | Screenshots 5-7 |
+| Employee roster | Senior Management previews the embedded CSV, commits five valid employees, and sees the reusable directory. | Screenshots 8-9 |
+| SSF cycle setup | The cycle uses Critical Core Skills (SSF), selects `Decision Making` and `Developing People`, and adds `Digital Transformation Leadership` as a cycle-level custom competency. | Screenshots 10-11 |
+| AI proposal governance | AI only proposes after a human request; Senior Management edits a question, asks for an alternative, applies it, and accepts the proposal into a draft version. | Screenshots 12-14 |
+| Approval and policy | Senior Management approves Version 1, activates the cycle, enables anonymous raw-response review before links are minted, and the policy locks after links exist. | Screenshots 15-17 |
+| Rater delivery | Three peer assignments are created for Maria Santos; MailHog receives three feedback emails; respondent URLs use `/respondent?tenantId=...#token`, keeping raw tokens out of the query string. | Screenshot 16 |
+| Respondent lifecycle | Each rater opens a fresh respondent page, acknowledges the visibility policy, submits ratings, and a reused link fails. | Screenshots 18-20 |
+| Completion and reporting | Completion moves from 0% to 100%; three peer responses satisfy the anonymity threshold of 3; the report includes response counts, scores, SSF/custom competency coverage, and development suggestions. | Screenshots 21-23 |
+| Governed raw review | Senior Management-only raw review is access-logged, anonymizes rater identity under the selected policy, and shows radar, matrix, group summary, and row-level audit views. | Screenshots 24-26 |
 
 ## 1. Start from the platform control plane
 
@@ -145,6 +160,32 @@ The raw-response page includes a competency radar, exact-score matrix, and rater
 The audit table shows every individual response row with the rater anonymized, the rater type, competency, question, answer, and completion timestamp. This makes raw review inspectable while preserving the cycle's anonymous identity policy.
 
 ![Governed raw response layout](/img/walkthroughs/sm-only-ssf/26-governed-raw-response-layout.png)
+
+## Functionality checklist
+
+Use this matrix to confirm the walkthrough covers the full Senior Management-only lifecycle.
+
+| Functionality | Covered in walkthrough | Notes |
+| --- | --- | --- |
+| Clean reset from zero tenants | Yes | The run begins with an empty Organizations dashboard before provisioning. |
+| Platform provisioning | Yes | Organization name, subdomain, industry, and Senior Management email are captured. |
+| Tenant activation | Yes | The activation email link is claimed before tenant sign-in. |
+| Senior Management OTP sign-in | Yes | No HR account is invited or used. |
+| Employee import preview and commit | Yes | Five CSV rows are previewed, committed, and shown in the directory. |
+| SSF competency selection | Yes | `Decision Making` and `Developing People` are selected from Critical Core Skills. |
+| Cycle-level custom competency | Yes | `Digital Transformation Leadership` is included in setup, respondent questions, report, and raw review. |
+| AI proposal request | Yes | Generation is requested from the cycle workspace and reaches ready-for-review. |
+| Human review/edit/select | Yes | A question is edited, an instructed wording alternative is generated, and the chosen alternative is applied before acceptance. |
+| Questionnaire approval | Yes | Version 1 moves from draft to approved and activates the cycle. |
+| Raw-response policy | Yes | Anonymous individual review is enabled before links are minted, then locks after link creation. |
+| Rater links and email delivery | Yes | Three peer links are minted and delivered through MailHog. |
+| Fragment token shape | Yes | Respondent URLs keep the raw token after `#`, not in query parameters. |
+| Respondent notice and submission | Yes | Respondents acknowledge active raw visibility and submit all rating questions. |
+| Single-use token enforcement | Yes | A used respondent URL shows the invalid-or-already-used message from a fresh load. |
+| Completion dashboard | Yes | Counts move from assigned 3 / invited 3 / completed 0 to completed 3 / 100%. |
+| Threshold-safe report | Yes | Three peer responses satisfy the default threshold of 3 for Maria Santos' individual report. |
+| Report content | Yes | The report shows response count, averages, competency breakdowns, and AI development suggestions. |
+| Raw-response review | Yes | Senior Management can inspect anonymized rows with access logging and governed reviewer context. |
 
 ## Closeout checklist
 
